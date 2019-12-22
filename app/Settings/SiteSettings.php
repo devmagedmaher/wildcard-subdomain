@@ -49,9 +49,9 @@ class SiteSettings
      */
     private function getSiteInformation() {
 
-        $website = Website::where('subdomain', $this->subdomain)->get()->first();
+        // $website = Website::where('subdomain', $this->subdomain)->get()->first();
 
-        $this->name = $website->name ?? null;
+        $this->name = null;
     }
 
     /**
